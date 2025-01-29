@@ -30,3 +30,369 @@
 .row__title {
     color: black;
 }
+/* Row styles */
+.row {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 20px;
+  }
+  
+  .row h1 {
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	margin-left: 20px;
+	margin-bottom: 10px;
+  }
+  
+  /* Flex container for posters */
+  .row__posters {
+	display: flex;
+	overflow-x: scroll; /* Enable horizontal scrolling */
+	padding: 20px 0;
+	scrollbar-width: thin;
+  }
+  
+  .row__posters::-webkit-scrollbar {
+	display: none; /* Hide scrollbar */
+  }
+  
+  .row__poster {
+	max-height: 200px;
+	object-fit: cover;
+	margin-right: 10px;
+	transition: transform 0.2s ease;
+	cursor: pointer;
+  }
+  
+  .row__poster:hover {
+	transform: scale(1.08); /* Slight zoom effect */
+  }
+  
+  /* For large rows (when isLargeRow is true) */
+  .row__posterLarge {
+	max-height: 250px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+	.row h1 {
+	  font-size: 20px;
+	}
+  
+	.row__posters {
+	  padding: 10px 0;
+	  display: flex;
+	  flex-wrap: nowrap; /* Ensure only horizontal scrolling */
+	  overflow-x: scroll; /* Enable horizontal scrolling */
+	}
+  
+	.row__poster {
+	  max-height: 150px;
+	  object-fit: cover;
+	  margin-right: 10px;
+	}
+  
+	.row__posterLarge {
+	  max-height: 180px;
+	}
+  
+	/* Ensure only Netflix & Home visible in mobile header */
+	.header_left li {
+	  font-size: 14px;
+	  margin-right: 8px;
+	}
+  }
+  
+  /* For small mobile screens */
+  @media screen and (max-width: 480px) {
+	.row h1 {
+	  font-size: 18px;
+	}
+  
+	.row__poster {
+	  max-height: 120px;
+	  margin-right: 5px;
+	}
+  
+	.row__posterLarge {
+	  max-height: 150px;
+	}
+  }
+  /* Make sure the parent container has enough width */
+.row {
+	position: relative; /* Ensures positioning context for sticky */
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 20px;
+  }
+  
+  /* Header title */
+  .row h1 {
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	margin-left: 20px;
+	margin-bottom: 10px;
+  }
+  
+  /* Sticky behavior for the row container */
+  .row__postersContainer {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0; /* Keeps it at the top of the screen when scrolling */
+	z-index: 10; /* Ensures it stays above other elements */
+	display: flex;
+	flex-wrap: nowrap; /* Horizontal scrolling */
+	overflow-x: auto; /* Enables horizontal scrolling */
+	padding: 20px 0;
+  }
+  
+  .row__posters {
+	display: flex;
+	flex-wrap: nowrap; /* Only horizontal scrolling */
+	overflow-x: scroll;
+	scrollbar-width: thin;
+  }
+  
+  .row__posters::-webkit-scrollbar {
+	display: none; /* Hide scrollbar for clean look */
+  }
+  
+  .row__poster {
+	max-height: 200px;
+	object-fit: cover;
+	margin-right: 10px;
+	transition: transform 0.2s ease;
+	cursor: pointer;
+  }
+  
+  .row__poster:hover {
+	transform: scale(1.08); /* Zoom effect */
+  }
+  
+  /* For large posters */
+  .row__posterLarge {
+	max-height: 250px;
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+	.row h1 {
+	  font-size: 20px;
+	}
+  
+	.row__postersContainer {
+	  padding: 10px 0;
+	}
+  
+	.row__poster {
+	  max-height: 150px;
+	}
+  
+	.row__posterLarge {
+	  max-height: 180px;
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	.row h1 {
+	  font-size: 18px;
+	}
+  
+	.row__poster {
+	  max-height: 120px;
+	  margin-right: 5px;
+	}
+  
+	.row__posterLarge {
+	  max-height: 150px;
+	}
+  }
+  /* Make sure the parent container has enough width */
+.row {
+	position: relative; /* Ensures positioning context for sticky */
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 20px;
+  }
+  
+  /* Header title */
+  .row h1 {
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	margin-left: 20px;
+	margin-bottom: 10px;
+  }
+  
+  /* Sticky behavior for the row container */
+  .row__postersContainer {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0; /* Keeps it at the top of the screen when scrolling */
+	z-index: 10; /* Ensures it stays above other elements */
+	display: flex;
+	flex-wrap: nowrap; /* Horizontal scrolling */
+	overflow-x: auto; /* Enables horizontal scrolling */
+	padding: 20px 0;
+  }
+  
+  .row__posters {
+	display: flex;
+	flex-wrap: nowrap; /* Only horizontal scrolling */
+	overflow-x: scroll;
+	scrollbar-width: thin;
+  }
+  
+  .row__posters::-webkit-scrollbar {
+	display: none; /* Hide scrollbar for clean look */
+  }
+  
+  .row__poster {
+	max-height: 200px;
+	object-fit: cover;
+	margin-right: 10px;
+	transition: transform 0.2s ease;
+	cursor: pointer;
+  }
+  
+  .row__poster:hover {
+	transform: scale(1.08); /* Zoom effect */
+  }
+  
+  /* For large posters */
+  .row__posterLarge {
+	max-height: 250px;
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+	.row h1 {
+	  font-size: 20px;
+	}
+  
+	.row__postersContainer {
+	  padding: 10px 0;
+	}
+  
+	.row__poster {
+	  max-height: 150px;
+	}
+  
+	.row__posterLarge {
+	  max-height: 180px;
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	.row h1 {
+	  font-size: 18px;
+	}
+  
+	.row__poster {
+	  max-height: 120px;
+	  margin-right: 5px;
+	}
+  
+	.row__posterLarge {
+	  max-height: 150px;
+	}
+  }
+  /* Make sure the parent container has enough width */
+.row {
+	position: relative; /* Ensures positioning context for sticky */
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 20px;
+  }
+  
+  /* Header title */
+  .row h1 {
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	margin-left: 20px;
+	margin-bottom: 10px;
+  }
+  
+  /* Sticky behavior for the row container */
+  .row__postersContainer {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0; /* Keeps it at the top of the screen when scrolling */
+	z-index: 10; /* Ensures it stays above other elements */
+	display: flex;
+	flex-wrap: nowrap; /* Horizontal scrolling */
+	overflow-x: auto; /* Enables horizontal scrolling */
+	padding: 20px 0;
+  }
+  
+  .row__posters {
+	display: flex;
+	flex-wrap: nowrap; /* Only horizontal scrolling */
+	overflow-x: scroll;
+	scrollbar-width: thin;
+  }
+  
+  .row__posters::-webkit-scrollbar {
+	display: none; /* Hide scrollbar for clean look */
+  }
+  
+  .row__poster {
+	max-height: 200px;
+	object-fit: cover;
+	margin-right: 10px;
+	transition: transform 0.2s ease;
+	cursor: pointer;
+  }
+  
+  .row__poster:hover {
+	transform: scale(1.08); /* Zoom effect */
+  }
+  
+  /* For large posters */
+  .row__posterLarge {
+	max-height: 250px;
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+	.row h1 {
+	  font-size: 20px;
+	}
+  
+	.row__postersContainer {
+	  padding: 10px 0;
+	}
+  
+	.row__poster {
+	  max-height: 150px;
+	}
+  
+	.row__posterLarge {
+	  max-height: 180px;
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	.row h1 {
+	  font-size: 18px;
+	}
+  
+	.row__poster {
+	  max-height: 120px;
+	  margin-right: 5px;
+	}
+  
+	.row__posterLarge {
+	  max-height: 150px;
+	}
+  }
+  .row__poster {
+	width: 100%;
+	object-fit: contain;
+	max-height: 100px;
+	transition: transform 450ms;
+	margin-right: 10px;
+}
